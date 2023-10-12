@@ -3,3 +3,9 @@ html, body {
   margin: 0;
   background: #fff;
 }
+
+.question-collapse .ant-collapse-header,
+.question-collapse .ant-collapse-content-box {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}

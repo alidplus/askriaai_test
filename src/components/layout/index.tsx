@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 import type { MenuProps } from 'antd';
-import { Breadcrumb, Button, Layout, Menu } from 'antd';
+import { Button, Layout, Menu } from 'antd';
 import { Outlet, useNavigate } from 'react-router-dom';
 import {
   MenuOutlined,
   HomeOutlined,
-  UnorderedListOutlined
+  ApiOutlined
 } from '@ant-design/icons';
 
 const { Content, Sider } = Layout;
@@ -35,7 +35,7 @@ export default function AppLayout() {
   const items = useMemo<MenuItem[]>(() => {
     return [
       getItem('Option 1', '1', () => { navigate('/') }, <HomeOutlined />),
-      getItem('Option 2', '2', () => { navigate('/test') }, <UnorderedListOutlined />),
+      getItem('Option 2', '2', () => { navigate('/api') }, <ApiOutlined />),
     ];
   }, [])
 
@@ -66,10 +66,10 @@ export default function AppLayout() {
       </Sider>
       <Layout style={{ marginLeft: 50 }}>
         <Content style={{ margin: '0 16px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
+          {/* <Breadcrumb style={{ margin: '16px 0' }}>
             <Breadcrumb.Item>User</Breadcrumb.Item>
             <Breadcrumb.Item>Bill</Breadcrumb.Item>
-          </Breadcrumb>
+          </Breadcrumb> */}
           <div style={{ padding: 24, minHeight: 360 }}>
             <Outlet />
           </div>
