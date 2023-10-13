@@ -67,7 +67,7 @@ function QuesionsCollapse(props: PropsWithChildren<InputProps<QuestionTemplate>>
           key: 'active',
           label: (
             <React.Fragment>
-              <Typography.Text disabled>{props.value.type}</Typography.Text>
+              <Typography.Text type="secondary">{props.value.type}</Typography.Text>
               <Typography.Title
                 level={4}
                 style={{ margin: 0 }}

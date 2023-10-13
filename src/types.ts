@@ -7,3 +7,10 @@ export interface InputProps<T> {
   devider?: boolean
   onChange?: (v: T) => void
 }
+
+
+export interface IMemeber {
+  name: string
+  nationality: string
+  education: string
+}
