@@ -1,9 +1,7 @@
 import { Card } from "antd"
 import useToken from "antd/es/theme/useToken";
 import PersonalInformationTemplateInput from "@/components/inputs/PersonalInformationTemplateInput";
-import ProfileTemplateInput from "@/components/inputs/ProfileTemplateInput";
-import { ApplicationFormAttributes, ApplicationTemplateService, PersonalInformationTemplate, QuestionTemplate } from "@/services/openapi";
-import { useEffect, useRef, useState } from "react";
+import { ApplicationFormAttributes } from "@/services/openapi";
 import QuestionsConfigArrayInput from "@/components/inputs/QuestionConfigInput";
 import { InputProps } from "@/types";
 

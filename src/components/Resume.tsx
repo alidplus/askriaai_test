@@ -1,6 +1,5 @@
-import { CloudDownloadOutlined, EyeOutlined, FileProtectOutlined, ShoppingOutlined } from "@ant-design/icons";
-import { Button, Card, Col, Divider, Flex, List, Row, Space, Typography } from "antd";
-import { thumbnailStyle } from "./PersonalInf";
+import { CloudDownloadOutlined, EyeOutlined } from "@ant-design/icons";
+import { Button, Card, Flex, Space, Typography } from "antd";
 
 const DEV_emptyResumeStyle: React.CSSProperties = {
   paddingTop: '100%',
